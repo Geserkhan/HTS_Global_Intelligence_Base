@@ -1,29 +1,21 @@
----
-category: "Labuan DMH Bank"
-summary: "말레이시아 라부안 금융청(LFSA) 등록 DLT 기반 국제 디지털 은행 구조 및 HTS DAO 결제 연동 문서군"
-related_core:
-  - HTS_DAO_TRR_Master
-  - ADGM_Legal_Core
-tags: ["Labuan", "DLT Bank", "DMH", "Digital Banking", "Cross-border Settlement", "License Update"]
-updated: "2025-10-22"
-author: "게세르 칸"
----
+# LABUAN DMH Bank Index
 
-# 🏦 DMH BANK (LABUAN) – Banking License & DLT Foundation Structure
+이 폴더는 **라부안 디지털 머천트 은행(DMH Bank)** 설립 전략, 라이선스, 구조 설계를 포함합니다.
 
-이 폴더는 **말레이시아 라부안 금융청(LFSA)** 의  
-디지털 은행 허가(Labuan DLT Banking License) 및  
-**DLT 기반 국제 결제 구조**에 관한 핵심 문서 세트를 포함합니다.
+## 🏦 문서 목록
+| 파일명 | 설명 | 상태 |
+|---------|------|------|
+| `Labuan_Bank_License_Process.md` | 라이선스 취득 절차 | ✅ 완료 |
+| `DMH_Bank_Business_Model.md` | 은행 비즈니스 모델 및 수익 구조 | ✅ 완료 |
+| `Cross_Border_Settlement.md` | 국제 송금/결제 연동 로직 | 🔄 진행중 |
+| `Labuan_Regulatory_Notes.md` | 라부안 FSA 관련 규제 메모 | ✅ 완료 |
 
----
+## 🧭 구조 개요
+- **은행 기능:** 예금, 결제, 수익 분배  
+- **TRR 연동:** HTS DAO 내 유동성 허브  
+- **ADGM 연계:** 다국적 금융 허브 간 결제 연결  
 
-### 📁 포함 문서
-
-1. **DMH_BANK_LICENSE_UPDATED.md** — 라부안 디지털은행 라이선스 갱신본 (공식 승인판)  
-2. **dmhb_dlt_foundation_bp.md** — DLT 기반 은행 재단 구조 사업계획서 (Foundation BP)
-
----
-
-> ⚖️ 본 문서군은 HTS DAO 및 ADGM Legal Core에서 설계된  
-> **DAO–DLT 금융통합 구조의 실질적 실행체(Execution Arm)** 역할을 수행합니다.  
-> 실물금 담보 및 DAO Reward 결제의 **Cross-Border Settlement Backbone** 으로 기능합니다.
+## 🤖 AI 탐색 순서
+1. `DMH_Bank_Business_Model.md`  
+2. `Cross_Border_Settlement.md`  
+3. `Labuan_Bank_License_Process.md`
