@@ -1,0 +1,56 @@
+name: Archive BusinessPlans-Agriculture to 05_Archive
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'BusinessPlans/Agriculture/**'
+
+concurrency:
+  group: archive-agriculture
+  cancel-in-progress: true
+
+jobs:
+  archive_agriculture:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ensure archive directory exists
+        run: mkdir -p 05_Archive/BusinessPlans/Agriculture
+
+      - name: Move Agriculture contents to archive
+        run: |
+          if [ -d BusinessPlans/Agriculture ]; then
+            # Move all files and subdirs recursively
+            find BusinessPlans/Agriculture -mindepth 1 -maxdepth 1 -exec git mv {} 05_Archive/BusinessPlans/Agriculture/ \;
+            # Remove now-empty directory if exists
+            rmdir BusinessPlans/Agriculture 2>/dev/null || true
+            echo "Agriculture contents moved successfully."
+          else
+            echo "No BusinessPlans/Agriculture directory to move."
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add --all
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Archive BusinessPlans/Agriculture → 05_Archive/BusinessPlans/Agriculture"
+            git push origin HEAD:main
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Output summary
+        if: success()
+        run: |
+          echo "::notice title=Archive Complete::BusinessPlans/Agriculture has been archived to 05_Archive/BusinessPlans/Agriculture"
