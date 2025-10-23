@@ -1,31 +1,26 @@
----
-category: "HTS DAO TRR Master"
-summary: "HTS DAO 및 TRR 구조의 핵심 백서와 금 기반 실물담보 금융 모델 관련 4대 특허 명세서"
-related_core:
-  - ADGM_Legal_Core
-  - BLXWT_Reward_System
-tags: ["DAO", "TRR", "Patent", "Gold-backed Asset", "Policy Finance", "Legal Structure"]
-updated: "2025-10-22"
-author: "게세르 칸"
----
+# HTS DAO TRR Master Index
 
-# 🟡 HTS DAO TRR Master Index
+이 폴더는 **HTS DAO 생태계의 핵심 구조 및 회수권(TRR, Trade Recovery Right)** 시스템을 정의합니다.  
+HTS 프로젝트의 철학, 기술 아키텍처, 비즈니스 로직이 모두 이곳에서 출발합니다.
 
-이 폴더는 HTS DAO의 근간이 되는 **TRR(Trust Redemption Right)** 구조와  
-금 기반 실물담보를 활용한 DAO 배당 시스템을 포함하며,  
-핵심 백서 및 4건의 특허 명세서를 포함합니다.
+## 📘 주요 문서 목록
+| 파일명 | 설명 | 상태 |
+|---------|------|------|
+| `TRR_Whitepaper_V3.0.md` | TRR 철학·기술·비즈니스 통합 백서 | ✅ 완료 |
+| `TRR_X_Protocol_Specs.md` | 탈중앙 무역결제 프로토콜 (TRR-X) 설계 | ✅ 완료 |
+| `TRR_Remit_Module.md` | 국제 송금용 TRR-Remit 시스템 구조 | 🔄 진행중 |
+| `HTS_Market_Platform_Design.md` | HTS Market 내 TRR 기반 거래 모델 | ✅ 완료 |
 
----
+## 🔍 구조 개요
+- **TRR-X:** 무역 결제 및 청산 프로토콜  
+- **TRR-Remit:** 국제 송금 및 교차 결제  
+- **HTS Market:** DAO 기반 B2B 거래소  
+- **TRR Core Contract:** 회수권 발행 및 소각 로직  
 
-### 📁 포함 문서
+## 🤖 AI 탐색 순서
+1. `TRR_Whitepaper_V3.0.md`  
+2. `TRR_X_Protocol_Specs.md`  
+3. `HTS_Market_Platform_Design.md`  
+4. `TRR_Remit_Module.md`
 
-1. **HTS_DAO_TRR_Whitepaper_v2.md** — TRR DAO 구조 및 실물담보 설계 백서  
-2. **P1_TRR_System_Patent_Spec.md** — TRR 시스템 특허 명세서 (완성본)  
-3. **P2_BLXWT_NonRedeemable_Token_Patent_Spec.md** — BLXWT 비상환형 토큰 특허 명세서 (완성본)  
-4. **P3_DAO_TRR_Pool_Patent_Spec.md** — DAO+TRR Pool 특허 명세서 (완성본)  
-5. **P4_Corporate_Segregation_Ecosystem_Patent_Spec.md** — 법인 분리 생태계 특허 명세서 (완성본)
 
----
-
-> ⚖️ 본 문서군은 HTS DAO의 **실물자산 기반 금융모델**을 특허·법리적으로 보호하는 핵심 근거이며,  
-> ADGM 및 LABUAN 금융법 구조와 직결되는 최초의 DAO–TRR 융합 시스템의 근간 자료입니다.
