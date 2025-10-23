@@ -1,127 +1,33 @@
-# Auto Categorized Index
+# Business Plans Archive Index
 
-## Agriculture
-- [✓ 8.13  1970s vs 현재 식품 비교.md](./Agriculture/✓ 8.13  1970s vs 현재 식품 비교.md)
-- [✓ 8.14 계림농장란 vs 동애등에란.md](./Agriculture/✓ 8.14 계림농장란 vs 동애등에란.md)
-- [✓ 8.16 농장 수익 구조 계산.md](./Agriculture/✓ 8.16 농장 수익 구조 계산.md)
-- [✓ 8.22 레시피 기반 음식 서비스.md](./Agriculture/✓ 8.22 레시피 기반 음식 서비스.md)
-- [✓ 8.27 순환 농장 관리.md](./Agriculture/✓ 8.27 순환 농장 관리.md)
-- [✓ BSF를 활용한 음식물 자원화.md](./Agriculture/✓ BSF를 활용한 음식물 자원화.md)
-- [✓ 토하 사육 방법.md](./Agriculture/✓ 토하 사육 방법.md)
+이 폴더는 HTS DAO 및 TRR 관련 사업계획서, 전략 백서, 투자 제안서 등을 시기별로 정리합니다.  
+AI는 각 문서를 연대순/버전순으로 인식합니다.
 
-## Energy
-- [✓ 8.14 Eflow 특허 & 특허전략.md](./Energy/✓ 8.14 Eflow 특허 & 특허전략.md)
-- [✓ 8.16 동해안 항만 건설 가능 지역.md](./Energy/✓ 8.16 동해안 항만 건설 가능 지역.md)
-- [✓ 9.11 5MW급 자가충전형 ESS 발전 프로젝트.md](./Energy/✓ 9.11 5MW급 자가충전형 ESS 발전 프로젝트.md)
-- [✓ LNG 백서 작성.md](./Energy/✓ LNG 백서 작성.md)
-- [✓ 대만 탈원전과 LNG.md](./Energy/✓ 대만 탈원전과 LNG.md)
-- [✓ 특허 비교 분석 발전기.md](./Energy/✓ 특허 비교 분석 발전기.md)
+## 🗂 문서 목록
 
-## Finance
-- [8.16 ADGM 자금 증명 발급.md](./Finance/8.16 ADGM 자금 증명 발급.md)
-- [8.21 은행 직무대행 위임.md](./Finance/8.21 은행 직무대행 위임.md)
-- [9.04 ADGM 법인 설립 서류.md](./Finance/9.04 ADGM 법인 설립 서류.md)
-- [DTRR-BORDERLINE-LEGENDARY-V3.1-Part1.md](./Finance/DTRR-BORDERLINE-LEGENDARY-V3.1-Part1.md)
-- [DTRR-BORDERLINE-LEGENDARY-V3.1-Part2-1.md](./Finance/DTRR-BORDERLINE-LEGENDARY-V3.1-Part2-1.md)
-- [DTRR-BORDERLINE-LEGENDARY-V3.1-Part2-2.17-19.md](./Finance/DTRR-BORDERLINE-LEGENDARY-V3.1-Part2-2.17-19.md)
-- [DTRR-BORDERLINE-LEGENDARY-V3.1-Part3.md](./Finance/DTRR-BORDERLINE-LEGENDARY-V3.1-Part3.md)
-- [DTRR-BORDERLINE-LEGENDARY-V3.1-Part4.md](./Finance/DTRR-BORDERLINE-LEGENDARY-V3.1-Part4.md)
-- [DTRR-BORDERLINE-LEGENDARY-V3.1-Part5.md](./Finance/DTRR-BORDERLINE-LEGENDARY-V3.1-Part5.md)
-- [TRR 출시 전략 설계.md](./Finance/TRR 출시 전략 설계.md)
-- [✓ 버핏 투자 기준 설명.md](./Finance/✓ 버핏 투자 기준 설명.md)
-- [✓ 수출입은행 정책자금 정리.md](./Finance/✓ 수출입은행 정책자금 정리.md)
-- [✓ 주식 담보 대출 설명.md](./Finance/✓ 주식 담보 대출 설명.md)
-- [중국 해외투자 제한.md](./Finance/중국 해외투자 제한.md)
-- [투자 수익률 보장 가능성.md](./Finance/투자 수익률 보장 가능성.md)
+| 파일명 | 버전 | 설명 | 상태 |
+|---------|------|------|------|
+| `HTS_BusinessPlan_V3.0.md` | v3.0 | TRR 기반 DAO 통합 전략 백서 | ✅ 완료 |
+| `HTS_BusinessPlan_V4_Draft.md` | v4.0 | 업데이트 중 – 회수권 통합 및 DAO 구조 확장 | 🔄 진행중 |
+| `TRR_Revenue_Model.xlsx` | – | TRR 수익 구조 및 시뮬레이션 데이터 | 📊 자료 |
+| `Investor_Pitch_Deck_VC.pdf` | – | 글로벌 VC 투자자용 IR 문서 | 📎 참조 |
 
-## RealEstate
-- [✓ 9.03 PRIDE LAND 심화본 작성.md](./RealEstate/✓ 9.03 PRIDE LAND 심화본 작성.md)
-- [✓ 사택 호텔 전환 전략.md](./RealEstate/✓ 사택 호텔 전환 전략.md)
-- [✓ 세컨하우스와 호텔 운영.md](./RealEstate/✓ 세컨하우스와 호텔 운영.md)
+---
 
-## Branding
-- [✓ 8.15 HTS Signature Wear & 3 Rings Story.md](./Branding/✓ 8.15 HTS Signature Wear & 3 Rings Story.md)
-- [✓ 9.01 광고_유통, 물류, 앰플.md](./Branding/✓ 9.01 광고_유통, 물류, 앰플.md)
-- [✓ 9.01 뷰티케어 삼성생명.md](./Branding/✓ 9.01 뷰티케어 삼성생명.md)
-- [✓ 9.02 앰플 + HTS 생명체.md](./Branding/✓ 9.02 앰플 + HTS 생명체.md)
-- [✓ 9.11 앰플 기획 및 리워드 전략.md](./Branding/✓ 9.11 앰플 기획 및 리워드 전략.md)
-- [✓ 올리브영 납품 수수료 구조.md](./Branding/✓ 올리브영 납품 수수료 구조.md)
-- [✓ 유튜브 광고 최상위 노출 방법.md](./Branding/✓ 유튜브 광고 최상위 노출 방법.md)
-- [✓ 프랜차이즈 리워드 배분.md](./Branding/✓ 프랜차이즈 리워드 배분.md)
+## 🧩 문서 관계도
 
-## Patent
-- [✓ 8.12 ZIPCODE 2.0.md](./Patent/✓ 8.12 ZIPCODE 2.0.md)
-- [✓ 8.14 특허 출원 비용 & 자손.md](./Patent/✓ 8.14 특허 출원 비용 & 자손.md)
-- [✓ 8.15 건축 특허.md](./Patent/✓ 8.15 건축 특허.md)
-- [✓ 8.20  3D 프린팅 하우스 특허.md](./Patent/✓ 8.20  3D 프린팅 하우스 특허.md)
-- [✓ 8.25 특허 출원과 제작.md](./Patent/✓ 8.25 특허 출원과 제작.md)
-- [✓ 특허 마이닝 전략.md](./Patent/✓ 특허 마이닝 전략.md)
-- [✓ 특허마이닝 전략 설계.md](./Patent/✓ 특허마이닝 전략 설계.md)
+- V3.0 → 기술·조직 중심  
+- V4.0 → 투자·수익 중심  
+- Pitch Deck → 대외 IR 요약본  
+- Revenue Model → 수치 근거 파일  
 
-## Talent
-- [✓ 8.24 HTS 인재 파이프라인.md](./Talent/✓ 8.24 HTS 인재 파이프라인.md)
-- [✓ 9.01 블랙록 방식 채용.md](./Talent/✓ 9.01 블랙록 방식 채용.md)
-- [✓ 병역특례 가능 분야.md](./Talent/✓ 병역특례 가능 분야.md)
-- [✓ 신입채용 최저임금 검색.md](./Talent/✓ 신입채용 최저임금 검색.md)
-- [✓ 주니어 채용 계획.md](./Talent/✓ 주니어 채용 계획.md)
+---
 
-## Other
-- [8.10 HTS 시스템 조직 운영 및 협업 전략.md](./Other/8.10 HTS 시스템 조직 운영 및 협업 전략.md)
-- [8.10. 연리 15% 수익 계산.md](./Other/8.10. 연리 15% 수익 계산.md)
-- [8.11 HTS COIN 게임 사용 가능성.md](./Other/8.11 HTS COIN 게임 사용 가능성.md)
-- [8.11 에어드롭 설명 요청.md](./Other/8.11 에어드롭 설명 요청.md)
-- [8.12 BRICS 우호적 HTS 시스템.md](./Other/8.12 BRICS 우호적 HTS 시스템.md)
-- [8.12 HTS Inspection Field Unit(FU).md](./Other/8.12 HTS Inspection Field Unit(FU).md)
-- [8.14 HTS COIN 신용카드 추가.md](./Other/8.14 HTS COIN 신용카드 추가.md)
-- [8.15 Beyond excellent & borderline legendary..md](./Other/8.15 Beyond excellent & borderline legendary..md)
-- [8.30 HTS 생명체 청사진.md](./Other/8.30 HTS 생명체 청사진.md)
-- [9.01 HTS 절세안.md](./Other/9.01 HTS 절세안.md)
-- [9.06 OEM펀드분석 및 HTS 모집.md](./Other/9.06 OEM펀드분석 및 HTS 모집.md)
-- [AI 탈세 추적 시스템.md](./Other/AI 탈세 추적 시스템.md)
-- [AI와 코딩 비용 변화.md](./Other/AI와 코딩 비용 변화.md)
-- [Deevid AI 영상 생성.md](./Other/Deevid AI 영상 생성.md)
-- [HTS vs 국가.md](./Other/HTS vs 국가.md)
-- [HTS 기축통화 가능성.md](./Other/HTS 기축통화 가능성.md)
-- [HTS 시스템 안정성 대응.md](./Other/HTS 시스템 안정성 대응.md)
-- [HTS 예금 활용 가능성.md](./Other/HTS 예금 활용 가능성.md)
-- [HTS 통합 사업 지침.md](./Other/HTS 통합 사업 지침.md)
-- [HTS 트라이앵글 구조.md](./Other/HTS 트라이앵글 구조.md)
-- [HadrianX 설명 요청.md](./Other/HadrianX 설명 요청.md)
-- [Health supplement customization.md](./Other/Health supplement customization.md)
-- [Outside of simulation meaning.md](./Other/Outside of simulation meaning.md)
-- [Special section 업데이트.md](./Other/Special section 업데이트.md)
-- [___ 다물항방 새로운 계획서.md](./Other/___ 다물항방 새로운 계획서.md)
-- [✓ 8.10. 하이브리드 물류.md](./Other/✓ 8.10. 하이브리드 물류.md)
-- [✓ 8.13 웰니스 산책로 설계.md](./Other/✓ 8.13 웰니스 산책로 설계.md)
-- [✓ 8.14  멕시코 아가베 수입 제조.md](./Other/✓ 8.14  멕시코 아가베 수입 제조.md)
-- [✓ 8.14 HTS REWARD 수령인 지정.md](./Other/✓ 8.14 HTS REWARD 수령인 지정.md)
-- [✓ 8.14 수출 품목 추천.md](./Other/✓ 8.14 수출 품목 추천.md)
-- [✓ 8.21 2025년 경유 수요 변화.md](./Other/✓ 8.21 2025년 경유 수요 변화.md)
-- [✓ 8.25 수트 대체 옵션 제시.md](./Other/✓ 8.25 수트 대체 옵션 제시.md)
-- [✓ 8.26 경기도 화강암 지층수.md](./Other/✓ 8.26 경기도 화강암 지층수.md)
-- [✓ ENERGY 협업 가능성 분석.md](./Other/✓ ENERGY 협업 가능성 분석.md)
-- [✓ 고등학생 산학취업 개요.md](./Other/✓ 고등학생 산학취업 개요.md)
-- [✓ 드론 음식 배달 현황.md](./Other/✓ 드론 음식 배달 현황.md)
-- [✓ 박진영 늙지 않는 음식.md](./Other/✓ 박진영 늙지 않는 음식.md)
-- [✓ 법인 부동산 세금 처리.md](./Other/✓ 법인 부동산 세금 처리.md)
-- [✓ 법인 전세자금 지원 방법.md](./Other/✓ 법인 전세자금 지원 방법.md)
-- [✓ 벤또 야끼 해석.md](./Other/✓ 벤또 야끼 해석.md)
-- [✓ 시간 단축과 비용 절감.md](./Other/✓ 시간 단축과 비용 절감.md)
-- [✓ 업무 관여도 보고서.md](./Other/✓ 업무 관여도 보고서.md)
-- [✓ 온실가스 배출권 할당 종류.md](./Other/✓ 온실가스 배출권 할당 종류.md)
-- [✓ 운전기사 건강식 제안.md](./Other/✓ 운전기사 건강식 제안.md)
-- [✓ 음식물 처리장 확보 전략.md](./Other/✓ 음식물 처리장 확보 전략.md)
-- [✓ 의식주 정리.md](./Other/✓ 의식주 정리.md)
-- [✓ 이플로우 회사 정보.md](./Other/✓ 이플로우 회사 정보.md)
-- [✓ 익명 기부 시스템 설계.md](./Other/✓ 익명 기부 시스템 설계.md)
-- [✓ 인생 전략 분석.md](./Other/✓ 인생 전략 분석.md)
-- [✓ 탄소 부과금 대응 방안.md](./Other/✓ 탄소 부과금 대응 방안.md)
-- [공급업체 조사 요청.md](./Other/공급업체 조사 요청.md)
-- [금 기반 MOC 흐름.md](./Other/금 기반 MOC 흐름.md)
-- [브라우저 멀티엔진 기술.md](./Other/브라우저 멀티엔진 기술.md)
-- [서울테크노파크 입주 조건.md](./Other/서울테크노파크 입주 조건.md)
-- [시스템 책임자 역할.md](./Other/시스템 책임자 역할.md)
-- [자본 유입 경로 설계.md](./Other/자본 유입 경로 설계.md)
-- [직무기술서 심화본 작성.md](./Other/직무기술서 심화본 작성.md)
-- [페루산 실버 LOI 작성.md](./Other/페루산 실버 LOI 작성.md)
+## 🤖 AI 메모
+AI는 이 폴더 내 파일을 다음 순서로 처리하십시오:  
+1. `HTS_BusinessPlan_V4_Draft.md`  
+2. `HTS_BusinessPlan_V3.0.md`  
+3. 기타 재무자료 및 외부 참조
+
+
 
