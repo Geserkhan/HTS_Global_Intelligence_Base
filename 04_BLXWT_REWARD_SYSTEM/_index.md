@@ -1,29 +1,21 @@
----
-category: "BLXWT Reward System"
-summary: "HTS DAO 기반 ESG·복지·배당 리워드 정책 및 실물자산 연동형 분배 시스템"
-related_core:
-  - HTS_DAO_TRR_Master
-  - ADGM_Legal_Core
-  - LABUAN_DMH_BANK
-tags: ["Reward System", "ESG", "HTS COIN", "Real Asset Dividend", "DAO Incentive", "Welfare Policy"]
-updated: "2025-10-22"
-author: "게세르 칸"
----
+# BLXWT Reward System Index
 
-# 💠 BLXWT Reward System Index
+이 폴더는 **BLX World Trade (BLXWT)**의 리워드 시스템, 토큰 이코노미, DAO 연동 모델을 다룹니다.
 
-이 폴더는 **HTS DAO의 ESG 기반 리워드 생태계**와  
-DAO 참여자에게 실물 금 기반 배당을 제공하는 **HTS COIN 보상 구조**를 포함합니다.  
-이는 사회적 환류(Reward & Welfare Return) 모델의 핵심 문서군입니다.
+## 🎯 문서 목록
+| 파일명 | 설명 | 상태 |
+|---------|------|------|
+| `BLXWT_Tokenomics.md` | 토큰 발행·분배·소각 구조 | ✅ 완료 |
+| `Reward_Policy_V1.md` | 파트너/트레이더 보상 정책 | ✅ 완료 |
+| `BLXWT_DAO_Integration.md` | HTS DAO 연동 구조 | 🔄 진행중 |
+| `Revenue_Sharing_Model.md` | 리워드 수익 분배 로직 | ✅ 완료 |
 
----
+## 💡 주요 구성요소
+- **BLXWT Token:** DAO 참여·리워드 통화  
+- **Reward Ledger:** 거래 참여자 포인트 시스템  
+- **Revenue Bridge:** DAO-외부 파트너 간 수익 분배  
 
-### 📁 포함 문서
-
-1. **blx-reward-korea-bp.md** — BLXWT 한국형 ESG 리워드 정책 및 실물배당 구조 사업계획서  
-
----
-
-> 💬 본 문서는 **HTS DAO–TRR–LABUAN 구조 간의 Reward Loop 연결 노드**로 작동하며,  
-> 실물자산 기반 DAO 배당 시스템의 **최종 사회적 환류 메커니즘(Social Return Mechanism)** 을 규정합니다.  
-> ESG·복지·배당을 통합한 DAO 구조의 사회경제적 정당성 근거 자료로 활용됩니다.
+## 🤖 AI 탐색 순서
+1. `BLXWT_Tokenomics.md`  
+2. `Revenue_Sharing_Model.md`  
+3. `BLXWT_DAO_Integration.md`
