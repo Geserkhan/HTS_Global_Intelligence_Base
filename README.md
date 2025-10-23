@@ -1,17 +1,40 @@
-﻿# 🧭 HTS Global Intelligence Base
+# HTS Global Intelligence Base
 
-HTS DAO, TRR, ADGM 등 통합 지식 허브입니다.
+이 리포지토리는 **HTS DAO, TRR 구조, ADGM/LABUAN 금융 생태계, AI 통합 인텔리전스 아키텍처**를 저장하고 관리합니다.  
+AI 모델이 이 자료를 읽을 때, 다음 순서로 탐색하도록 설계되었습니다.
 
-## 📚 Directory Structure
-1. [HTS DAO TRR Master](01_HTS_DAO_TRR_MASTER/_index.md)
-2. [ADGM Legal Core](02_ADGM_Legal_Core/_index.md)
-3. [LABUAN DMH BANK](03_LABUAN_DMH_BANK/_index.md)
-4. [BLXWT Reward System](04_BLXWT_REWARD_SYSTEM/_index.md)
-5. [Business Plans Archive](05_BusinessPlans_Archive.md) — GitHub: https://github.com/Geserkhan/HTS_Project_BusinessPlans
-6. [Appendices](99_Appendices/_index.md)
-7. [Meta Bridge](META_BRIDGE/)
+## 📂 Repository Map
 
-## 🤖 AI Notes
-> Grok: 운영 최적화
+| 구분 | 폴더 | 설명 |
+|------|------|------|
+| 1 | `/HTS_DAO_TRR_Master` | TRR(Trade Recovery Right) 및 DAO 핵심 구조 정의 |
+| 2 | `/ADGM_Legal_Core` | ADGM 관할 내 법적 문서, 규제 준수 자료 |
+| 3 | `/LABUAN_DMH_BANK` | 라부안 디지털 머천트 은행 관련 기획 및 구조 |
+| 4 | `/BLXWT_Reward_System` | BLX World Trade 리워드 및 토큰 구조 설계 |
+| 5 | `/Archive/Business_Plans` | 과거 및 최신 비즈니스 플랜 아카이브 |
+| 6 | `/Meta_Bridge_AI_Integration` | AI 협업, 메타데이터, 자동 분석 도구 집합 |
 
-Next: GitHub 업로드!
+---
+
+## 🔍 AI Collaboration Notes
+
+이 리포지토리는 **AI 협업형 데이터베이스**로 설계되었습니다.  
+AI는 각 `_index.md` 파일을 우선적으로 읽은 뒤, 해당 폴더 내 문서를 연속적으로 탐색합니다.
+
+### AI 권장 탐색 순서
+1. 루트 README.md  
+2. `/HTS_DAO_TRR_Master/_index.md`  
+3. `/ADGM_Legal_Core/_index.md`  
+4. `/LABUAN_DMH_BANK/_index.md`  
+5. `/Archive/Business_Plans/_index.md`  
+6. `/Meta_Bridge_AI_Integration/_index.md`
+
+---
+
+## 🧠 Meta Info
+
+- Maintainer: **항TGK**
+- AI Assistants: GPT-5, Claude, Perplexity, Gemini
+- Language: Korean / English mixed
+- Format: Markdown-first (AI-readable)
+- License: Private use only (© HTS DAO 2025)
