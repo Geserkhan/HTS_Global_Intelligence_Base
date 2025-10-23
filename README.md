@@ -34,11 +34,14 @@ Business Plans Archive: https://github.com/Geserkhan/HTS_Project_BusinessPlans (
 ### 운영 프로세스 플로우 (Mermaid 다이어그램)
 HTS DAO 운영을 시각화: DAO 투표 → RWA 검증 → 배당 실행.
 
+### 운영 프로세스 플로우 (Mermaid 다이어그램)
+HTS DAO 운영을 시각화: DAO 투표 → RWA 검증 → 배당 실행.
+
 ```mermaid
 graph TD
-    A[DAO 투표 시작<br/>(Governance_Model.md)] --> B[Finance 폴더 참조<br/>(BLXWT_Rewards_Plan.md)]
-    B --> C[RWA/TRR 정합성 검증<br/>(GPT/Claude 자동)]
-    C --> D[ADGM/Labuan 라이선스 확인<br/>(02_ADGM_Legal_Core)]
-    D --> E[ESG 배당 실행<br/>(15% HTS COIN, 실물 금 담보)]
-    E --> F[Meta Bridge 업데이트<br/>(AI 지식 그래프)]
+    A["DAO 투표 시작\n(Governance_Model.md)"] --> B["Finance 폴더 참조\n(BLXWT_Rewards_Plan.md)"]
+    B --> C["RWA/TRR 정합성 검증\n(GPT/Claude 자동)"]
+    C --> D["ADGM/Labuan 라이선스 확인\n(02_ADGM_Legal_Core)"]
+    D --> E["ESG 배당 실행\n(15% HTS COIN, 실물 금 담보)"]
+    E --> F["Meta Bridge 업데이트\n(AI 지식 그래프)"]
     F --> A
