@@ -1,0 +1,25 @@
+project: HTS_Global_Intelligence_Base
+version: 1.0
+maintainer: 항TGK
+ai_readable: true
+encoding: UTF-8
+structure:
+  - HTS_DAO_TRR_Master
+  - ADGM_Legal_Core
+  - LABUAN_DMH_BANK
+  - BLXWT_Reward_System
+  - Archive/Business_Plans
+  - Meta_Bridge_AI_Integration
+priority_read_order:
+  - README.md
+  - HTS_DAO_TRR_Master/_index.md
+  - ADGM_Legal_Core/_index.md
+  - LABUAN_DMH_BANK/_index.md
+  - Archive/Business_Plans/_index.md
+metadata_fields:
+  - version
+  - description
+  - author
+  - filetype
+  - ai_priority
+license: "Private - HTS DAO (2025)"
