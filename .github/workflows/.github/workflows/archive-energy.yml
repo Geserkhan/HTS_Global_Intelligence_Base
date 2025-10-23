@@ -1,0 +1,41 @@
+name: Archive BusinessPlans-Energy to 05_Archive
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'BusinessPlans/Energy/**'
+
+jobs:
+  archive_energy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create archive directory if not exists
+        run: mkdir -p 05_Archive/BusinessPlans/Energy
+
+      - name: Move Energy contents to archive
+        run: |
+          # Move all files and subdirs recursively
+          find BusinessPlans/Energy -mindepth 1 -maxdepth 1 -exec git mv {} 05_Archive/BusinessPlans/Energy/ \;
+          # Remove now-empty directory if exists
+          rmdir BusinessPlans/Energy 2>/dev/null || true
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Archive BusinessPlans/Energy → 05_Archive/BusinessPlans/Energy"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
