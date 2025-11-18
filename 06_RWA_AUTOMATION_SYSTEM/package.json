@@ -1,0 +1,59 @@
+{
+  "name": "hts-rwa-automation-system",
+  "version": "1.0.0",
+  "description": "HTS DAO Real World Asset (RWA) Automation System - 4-Layer Blockchain Architecture",
+  "author": "HTS DAO Technical Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "deploy:layer1": "hardhat run scripts/deploy-layer1.js",
+    "deploy:layer2": "hardhat run scripts/deploy-layer2.js",
+    "deploy:layer3": "hardhat run scripts/deploy-layer3.js",
+    "deploy:layer4": "hardhat run scripts/deploy-layer4.js",
+    "verify:all": "hardhat run scripts/verify-all.js",
+    "setup:init": "hardhat run scripts/setup/init.js",
+    "setup:roles": "hardhat run scripts/setup/roles.js",
+    "setup:oracles": "hardhat run scripts/setup/oracles.js",
+    "monitor:start": "node scripts/monitoring/start.js",
+    "monitor:health": "node scripts/monitoring/health.js",
+    "clean": "hardhat clean",
+    "node": "hardhat node"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "chai": "^4.3.0",
+    "dotenv": "^16.0.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.0",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": "^10.0.0",
+    "typechain": "^8.3.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@axelar-network/axelar-gmp-sdk-solidity": "^5.6.0",
+    "@chainlink/contracts": "^0.8.0",
+    "@gelato-network/automate-sdk": "^1.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "ethers": "^6.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

@@ -1,0 +1,43 @@
+# Hardhat files
+cache/
+artifacts/
+typechain-types/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Coverage
+coverage/
+coverage.json
+.coverage_*
+
+# Gas Reporter
+gas-report.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Deployment
+deployments/
+broadcast/
+
+# Misc
+*.log
+.cache/
+dist/
+build/
