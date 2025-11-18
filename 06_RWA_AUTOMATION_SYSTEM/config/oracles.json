@@ -1,0 +1,101 @@
+{
+  "oracles": {
+    "bloomberg": {
+      "name": "Bloomberg Terminal",
+      "type": "US_TREASURIES",
+      "weight": 3000,
+      "endpoint": "https://api.bloomberg.com/v1/prices",
+      "updateInterval": 3600,
+      "credentials": {
+        "apiKey": "BLOOMBERG_API_KEY",
+        "secret": "BLOOMBERG_SECRET"
+      }
+    },
+    "assetManager": {
+      "name": "Private Credit Manager",
+      "type": "PRIVATE_CREDIT",
+      "weight": 2000,
+      "endpoint": "https://api.assetmanager.com/v1/credit",
+      "updateInterval": 3600,
+      "credentials": {
+        "apiKey": "ASSET_MANAGER_API_KEY",
+        "secret": "ASSET_MANAGER_SECRET"
+      }
+    },
+    "lbma": {
+      "name": "London Bullion Market Association",
+      "type": "GOLD",
+      "weight": 5000,
+      "endpoint": "https://api.lbma.org.uk/v1/prices",
+      "updateInterval": 3600,
+      "credentials": {
+        "apiKey": "LBMA_API_KEY"
+      }
+    }
+  },
+  "consensusOracles": [
+    {
+      "id": 1,
+      "name": "Oracle Node 1",
+      "address": "0x0000000000000000000000000000000000000001",
+      "operator": "HTS DAO",
+      "region": "US-EAST",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Oracle Node 2",
+      "address": "0x0000000000000000000000000000000000000002",
+      "operator": "HTS DAO",
+      "region": "EU-WEST",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Oracle Node 3",
+      "address": "0x0000000000000000000000000000000000000003",
+      "operator": "Partner 1",
+      "region": "ASIA-EAST",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Oracle Node 4",
+      "address": "0x0000000000000000000000000000000000000004",
+      "operator": "Partner 2",
+      "region": "US-WEST",
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "Oracle Node 5",
+      "address": "0x0000000000000000000000000000000000000005",
+      "operator": "Partner 3",
+      "region": "EU-NORTH",
+      "active": true
+    },
+    {
+      "id": 6,
+      "name": "Oracle Node 6",
+      "address": "0x0000000000000000000000000000000000000006",
+      "operator": "Partner 4",
+      "region": "ASIA-SOUTH",
+      "active": true
+    },
+    {
+      "id": 7,
+      "name": "Oracle Node 7",
+      "address": "0x0000000000000000000000000000000000000007",
+      "operator": "Partner 5",
+      "region": "LATAM",
+      "active": true
+    }
+  ],
+  "validation": {
+    "requiredOracles": 7,
+    "consensusThreshold": 5,
+    "maxDeviation": 500,
+    "roundDuration": 300,
+    "trustScoreMinimum": 8000
+  }
+}

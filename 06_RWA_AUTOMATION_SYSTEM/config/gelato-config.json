@@ -1,0 +1,75 @@
+{
+  "gelato": {
+    "monitoring": {
+      "interval": 300,
+      "maxGasPrice": 100000000000,
+      "targetSettlementTime": 60,
+      "retries": 3
+    },
+    "tasks": [
+      {
+        "name": "LTV Monitor",
+        "type": "condition",
+        "contract": "GelatoAutomation",
+        "function": "checker",
+        "trigger": {
+          "type": "time",
+          "interval": 300
+        },
+        "gasLimit": 500000
+      },
+      {
+        "name": "Trigger Executor",
+        "type": "execution",
+        "contract": "GelatoAutomation",
+        "function": "executeTriggerDirect",
+        "trigger": {
+          "type": "event",
+          "event": "TriggerActivated"
+        },
+        "gasLimit": 1000000
+      },
+      {
+        "name": "Collateral Updater",
+        "type": "condition",
+        "contract": "HTLXTrigger",
+        "function": "updateCollateral",
+        "trigger": {
+          "type": "time",
+          "interval": 300
+        },
+        "gasLimit": 300000
+      }
+    ],
+    "executors": {
+      "primary": "0x3CACa7b48D0573D793d3b0279b5F0029180E83b6",
+      "backup": "0x7598e84B2E114AB62CAB288CE5f7d5f6bad35BbA"
+    },
+    "payment": {
+      "token": "ETH",
+      "maxFeePerTask": "0.01",
+      "treasuryAddress": "0x0000000000000000000000000000000000000000"
+    },
+    "alerting": {
+      "enabled": true,
+      "webhook": "https://hooks.slack.com/services/YOUR_WEBHOOK",
+      "email": "alerts@htsdao.com",
+      "conditions": [
+        {
+          "type": "executionFailed",
+          "severity": "critical"
+        },
+        {
+          "type": "gasExceeded",
+          "threshold": 150000000000,
+          "severity": "warning"
+        },
+        {
+          "type": "settlementDelayed",
+          "threshold": 120,
+          "severity": "warning"
+        }
+      ]
+    }
+  }
+}

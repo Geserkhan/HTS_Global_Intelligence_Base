@@ -1,0 +1,81 @@
+{
+  "networks": {
+    "ethereum": {
+      "chainId": 1,
+      "name": "Ethereum Mainnet",
+      "rpc": "https://eth-mainnet.g.alchemy.com/v2/YOUR_KEY",
+      "explorer": "https://etherscan.io",
+      "gasPrice": "auto",
+      "confirmations": 12,
+      "axelarGateway": "0x4F4495243837681061C4743b74B3eEdf548D56A5"
+    },
+    "polygon": {
+      "chainId": 137,
+      "name": "Polygon Mainnet",
+      "rpc": "https://polygon-mainnet.g.alchemy.com/v2/YOUR_KEY",
+      "explorer": "https://polygonscan.com",
+      "gasPrice": "auto",
+      "confirmations": 128,
+      "axelarGateway": "0x6f015F16De9fC8791b234eF68D486d2bF203FBA8"
+    },
+    "arbitrum": {
+      "chainId": 42161,
+      "name": "Arbitrum One",
+      "rpc": "https://arb-mainnet.g.alchemy.com/v2/YOUR_KEY",
+      "explorer": "https://arbiscan.io",
+      "gasPrice": "auto",
+      "confirmations": 1,
+      "axelarGateway": "0xe432150cce91c13a887f7D836923d5597adD8E31"
+    },
+    "optimism": {
+      "chainId": 10,
+      "name": "Optimism",
+      "rpc": "https://opt-mainnet.g.alchemy.com/v2/YOUR_KEY",
+      "explorer": "https://optimistic.etherscan.io",
+      "gasPrice": "auto",
+      "confirmations": 1,
+      "axelarGateway": "0xe432150cce91c13a887f7D836923d5597adD8E31"
+    },
+    "avalanche": {
+      "chainId": 43114,
+      "name": "Avalanche C-Chain",
+      "rpc": "https://api.avax.network/ext/bc/C/rpc",
+      "explorer": "https://snowtrace.io",
+      "gasPrice": "auto",
+      "confirmations": 1,
+      "axelarGateway": "0x5029C0EFf6C34351a0CEc334542cDb22c7928f78"
+    },
+    "bsc": {
+      "chainId": 56,
+      "name": "BNB Smart Chain",
+      "rpc": "https://bsc-dataseed1.binance.org",
+      "explorer": "https://bscscan.com",
+      "gasPrice": "auto",
+      "confirmations": 15,
+      "axelarGateway": "0x304acf330bbE08d1e512eefaa92F6a57871fD895"
+    },
+    "sepolia": {
+      "chainId": 11155111,
+      "name": "Sepolia Testnet",
+      "rpc": "https://eth-sepolia.g.alchemy.com/v2/YOUR_KEY",
+      "explorer": "https://sepolia.etherscan.io",
+      "gasPrice": "auto",
+      "confirmations": 1,
+      "axelarGateway": "0xe432150cce91c13a887f7D836923d5597adD8E31"
+    }
+  },
+  "gelato": {
+    "ethereum": "0x3CACa7b48D0573D793d3b0279b5F0029180E83b6",
+    "polygon": "0x7598e84B2E114AB62CAB288CE5f7d5f6bad35BbA",
+    "arbitrum": "0x4775aF8FEf4809fE10bf05867d2b038a4b5B2146",
+    "optimism": "0x01051113D81D7d6DA508462F2ad6d7fD96cF42Ef",
+    "avalanche": "0x7C5c4Af1618220C090A6863175de47afb20fa9Df",
+    "bsc": "0x7C5c4Af1618220C090A6863175de47afb20fa9Df"
+  },
+  "deployment": {
+    "gasMultiplier": 1.2,
+    "timeout": 300000,
+    "retries": 3,
+    "retryDelay": 5000
+  }
+}
