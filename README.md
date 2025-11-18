@@ -12,7 +12,8 @@ AI 모델이 이 자료를 읽을 때, 다음 순서로 탐색하도록 설계�
 | 3 | `/LABUAN_DMH_BANK` | 라부안 디지털 머천트 은행 관련 기획 및 구조 |
 | 4 | `/BLXWT_Reward_System` | BLX World Trade 리워드 및 토큰 구조 설계 |
 | 5 | `/Archive/Business_Plans` | 과거 및 최신 비즈니스 플랜 아카이브 |
-| 6 | `/Meta_Bridge_AI_Integration` | AI 협업, 메타데이터, 자동 분석 도구 집합 |
+| 6 | `/Cross_Chain_RWA_Bridge` | 크로스체인 RWA 브리지 시스템 (Ethereum ↔ Polygon) |
+| 7 | `/Meta_Bridge_AI_Integration` | AI 협업, 메타데이터, 자동 분석 도구 집합 |
 
 ---
 
@@ -22,12 +23,14 @@ AI 모델이 이 자료를 읽을 때, 다음 순서로 탐색하도록 설계�
 AI는 각 `_index.md` 파일을 우선적으로 읽은 뒤, 해당 폴더 내 문서를 연속적으로 탐색합니다.
 
 ### AI 권장 탐색 순서
-1. 루트 README.md  
-2. `/HTS_DAO_TRR_Master/_index.md`  
-3. `/ADGM_Legal_Core/_index.md`  
-4. `/LABUAN_DMH_BANK/_index.md`  
-5. `/Archive/Business_Plans/_index.md`  
-6. `/Meta_Bridge_AI_Integration/_index.md`
+1. 루트 README.md
+2. `/HTS_DAO_TRR_Master/_index.md`
+3. `/ADGM_Legal_Core/_index.md`
+4. `/LABUAN_DMH_BANK/_index.md`
+5. `/BLXWT_Reward_System/_index.md`
+6. `/Cross_Chain_RWA_Bridge/_index.md`
+7. `/Archive/Business_Plans/_index.md`
+8. `/Meta_Bridge_AI_Integration/_index.md`
 
 ---
 
