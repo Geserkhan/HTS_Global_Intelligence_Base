@@ -1,0 +1,361 @@
+# HTS Treasury Portfolio Rebalancing Parameters
+# Machine-readable configuration for automated rebalancing system
+# Version: 1.0
+# Last Updated: 2025-11-18
+
+---
+treasury:
+  total_value_usd: 100_000_000
+  base_currency: "USD"
+  reporting_decimals: 2
+  valuation_frequency: "daily"  # daily, weekly, monthly
+  valuation_time_utc: "00:00"
+
+allocation_targets:
+  stablecoins:
+    target_percentage: 40
+    min_percentage: 35
+    max_percentage: 45
+    assets:
+      - symbol: "USDC"
+        allocation: 22
+        address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+        chain: "ethereum"
+        decimals: 6
+      - symbol: "USDT"
+        allocation: 18
+        address: "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+        chain: "ethereum"
+        decimals: 6
+
+  defi_yields:
+    target_percentage: 30
+    min_percentage: 25
+    max_percentage: 35
+    target_apy: 6.0
+    min_acceptable_apy: 4.0
+    protocols:
+      - name: "Aave V3"
+        allocation: 18
+        pool_address: "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2"
+        asset: "aUSDC"
+        risk_tier: "A"
+        insurance_coverage: 300_000
+      - name: "Curve Finance"
+        allocation: 12
+        pool_address: "0xbEbc44782C7dB0a1A60Cb6fe97d0b483032FF1C7"
+        asset: "3CRV"
+        risk_tier: "A"
+        insurance_coverage: 200_000
+
+  real_world_assets:
+    target_percentage: 20
+    min_percentage: 15
+    max_percentage: 25
+    target_yield: 4.5
+    maturity_range_days: [30, 180]
+    assets:
+      - type: "US Treasury Bills"
+        allocation: 15
+        custodian: "Fireblocks"
+        maturity_days: 90
+        yield_target: 5.0
+      - type: "Tokenized Securities"
+        allocation: 5
+        protocols:
+          - name: "Franklin Templeton BENJI"
+            address: "0x2B09B52d42DfB4e0cba43F607DdCB48dBcB29a76"
+            allocation: 3
+          - name: "Ondo OUSG"
+            address: "0x1B19C19393e2d034D8Ff31ff34c81252FcBbee92"
+            allocation: 2
+
+  reserve_assets:
+    target_percentage: 10
+    min_percentage: 8
+    max_percentage: 15
+    rebalancing_frequency: "quarterly"
+    assets:
+      - symbol: "ETH"
+        allocation: 6
+        address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        chain: "ethereum"
+        purpose: "gas_fees_network_security"
+      - symbol: "BTC"
+        allocation: 4
+        address: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"  # WBTC
+        chain: "ethereum"
+        purpose: "store_of_value_hedge"
+
+rebalancing_rules:
+  drift_threshold:
+    percentage: 5  # Trigger rebalancing if drift exceeds 5%
+    calculation_method: "relative"  # absolute or relative
+    check_frequency: "weekly"  # daily, weekly, monthly
+    check_day: "sunday"
+    check_time_utc: "00:00"
+
+  execution_thresholds:
+    minimum_rebalance_amount_usd: 100_000  # Don't rebalance if < $100K
+    large_order_threshold_usd: 5_000_000   # Requires multi-sig if > $5M
+    maximum_single_trade_usd: 10_000_000   # Never trade more than $10M at once
+
+  slippage_tolerance:
+    default: 0.005  # 0.5%
+    stablecoin_swaps: 0.003  # 0.3%
+    volatile_assets: 0.01   # 1%
+    rwa_trades: 0.002       # 0.2%
+
+  time_constraints:
+    min_time_between_rebalances_hours: 168  # 1 week
+    max_rebalancing_duration_hours: 24      # Complete within 24 hours
+    trading_hours_only: false                # Allow 24/7 trading
+    blackout_periods:
+      - start: "2025-12-24T00:00:00Z"
+        end: "2025-12-26T00:00:00Z"
+        reason: "Holiday trading halt"
+
+execution_venues:
+  dex_aggregators:
+    - name: "1inch"
+      priority: 1
+      max_trade_size_usd: 5_000_000
+      supported_chains: ["ethereum", "polygon", "arbitrum"]
+    - name: "Uniswap V3"
+      priority: 2
+      max_trade_size_usd: 3_000_000
+      supported_chains: ["ethereum", "polygon"]
+    - name: "Curve Finance"
+      priority: 1
+      max_trade_size_usd: 10_000_000
+      use_case: "stablecoin_swaps"
+
+  otc_desks:
+    - name: "Wintermute"
+      priority: 1
+      min_trade_size_usd: 1_000_000
+      assets: ["BTC", "ETH", "USDC", "USDT"]
+      settlement_time_hours: 2
+    - name: "FalconX"
+      priority: 2
+      min_trade_size_usd: 500_000
+      assets: ["BTC", "ETH", "USDC"]
+      settlement_time_hours: 1
+
+  rwa_platforms:
+    - name: "Securitize"
+      supported_assets: ["US Treasuries", "Real Estate Tokens"]
+      settlement_time_days: 3
+    - name: "Ondo Finance"
+      supported_assets: ["OUSG", "USDY"]
+      settlement_time_days: 1
+
+risk_management:
+  circuit_breakers:
+    - condition: "single_asset_drop_24h"
+      threshold: 20  # Pause if any asset drops >20% in 24h
+      action: "emergency_pause"
+    - condition: "protocol_exploit_detected"
+      data_source: "rekt_news_api"
+      action: "withdraw_from_protocol"
+    - condition: "abnormal_gas_price"
+      threshold_gwei: 500
+      action: "delay_rebalancing"
+
+  position_limits:
+    max_single_protocol_percentage: 10  # Never allocate >10% to one protocol
+    max_single_asset_percentage: 25     # Never hold >25% in one asset
+    max_illiquid_assets_percentage: 30  # RWA + long lock DeFi < 30%
+
+  insurance_requirements:
+    smart_contract_coverage_usd: 500_000
+    provider: "Nexus Mutual"
+    renewal_frequency: "annual"
+    coverage_categories:
+      - category: "smart_contract_exploit"
+        coverage: 300_000
+      - category: "protocol_insolvency"
+        coverage: 200_000
+
+  monitoring:
+    health_check_interval_minutes: 15
+    alert_channels:
+      - type: "telegram"
+        webhook: "${TELEGRAM_ALERT_WEBHOOK}"
+      - type: "email"
+        recipients: ["treasury@htsdao.org", "cfo@htsdao.org"]
+      - type: "discord"
+        webhook: "${DISCORD_TREASURY_WEBHOOK}"
+
+    alert_conditions:
+      - metric: "drift_threshold_exceeded"
+        severity: "warning"
+      - metric: "rebalancing_failed"
+        severity: "critical"
+      - metric: "slippage_exceeded"
+        severity: "warning"
+      - metric: "oracle_failure"
+        severity: "critical"
+
+governance:
+  multisig:
+    address: "${DAO_MULTISIG_ADDRESS}"
+    threshold: "2-of-3"
+    signers:
+      - role: "CEO_DAO_Lead"
+        address: "${SIGNER_1_ADDRESS}"
+      - role: "CFO_Treasury_Manager"
+        address: "${SIGNER_2_ADDRESS}"
+      - role: "CTO_Smart_Contract_Admin"
+        address: "${SIGNER_3_ADDRESS}"
+
+  approval_requirements:
+    large_rebalance_usd: 5_000_000
+    allocation_change_threshold: 5  # >5% change requires vote
+    emergency_actions: ["pause", "unpause", "withdraw_all"]
+
+  dao_voting:
+    quorum_change_allocation: 30
+    quorum_emergency_override: 50
+    approval_threshold_normal: 51
+    approval_threshold_major: 66
+    approval_threshold_critical: 75
+    voting_period_days:
+      change_allocation: 7
+      modify_threshold: 5
+      add_asset_category: 10
+      emergency_override: 1
+
+automation:
+  chainlink_keeper:
+    upkeep_interval_seconds: 3600  # Check every hour
+    gas_limit: 500_000
+    min_keeper_balance_eth: 5
+
+  keeper_functions:
+    - name: "checkDrift"
+      frequency: "hourly"
+      gas_estimate: 100_000
+    - name: "executeRebalancing"
+      frequency: "on_demand"
+      gas_estimate: 300_000
+    - name: "updateOraclePrices"
+      frequency: "per_block"
+      gas_estimate: 50_000
+
+oracles:
+  price_feeds:
+    - asset: "ETH/USD"
+      provider: "Chainlink"
+      address: "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+      heartbeat_seconds: 3600
+    - asset: "BTC/USD"
+      provider: "Chainlink"
+      address: "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c"
+      heartbeat_seconds: 3600
+    - asset: "USDC/USD"
+      provider: "Chainlink"
+      address: "0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6"
+      heartbeat_seconds: 86400
+    - asset: "XAU/USD"
+      provider: "Chainlink"
+      address: "0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6"
+      heartbeat_seconds: 3600
+
+  yield_data:
+    - protocol: "Aave V3"
+      api_endpoint: "https://api.aave.com/v3/pools"
+      update_frequency_minutes: 60
+    - protocol: "Curve Finance"
+      api_endpoint: "https://api.curve.fi/api/getPools"
+      update_frequency_minutes: 60
+    - protocol: "DeFi Llama"
+      api_endpoint: "https://yields.llama.fi/pools"
+      update_frequency_minutes: 30
+
+reporting:
+  weekly_report:
+    day: "sunday"
+    time_utc: "12:00"
+    storage:
+      - type: "ipfs"
+        gateway: "https://ipfs.io/ipfs/"
+      - type: "arweave"
+        gateway: "https://arweave.net/"
+    distribution:
+      - channel: "dao_forum"
+        format: "markdown"
+      - channel: "email"
+        recipients: ["dao-members@htsdao.org"]
+
+  monthly_compliance:
+    recipient: "FSRA"
+    format: "IFRS_JSON"
+    delivery_method: "secure_api"
+    deadline_day_of_month: 5
+    includes:
+      - "portfolio_valuation"
+      - "risk_assessment"
+      - "aml_ctf_attestation"
+      - "audit_certification"
+
+  performance_metrics:
+    calculate_frequency: "daily"
+    metrics:
+      - name: "portfolio_apy"
+        target: 4.5
+        alert_if_below: 3.0
+      - name: "drift_compliance"
+        target: 95  # 95% of time within threshold
+      - name: "rebalancing_frequency_per_month"
+        target: 2
+        alert_if_above: 4
+      - name: "average_slippage"
+        target: 0.3
+        alert_if_above: 0.5
+      - name: "gas_cost_usd_per_month"
+        target: 500
+        alert_if_above: 1000
+
+smart_contracts:
+  ethereum_mainnet:
+    rebalancing_manager: "${REBALANCING_MANAGER_ADDRESS}"
+    treasury_vault: "${TREASURY_VAULT_ADDRESS}"
+    multisig_wallet: "${GNOSIS_SAFE_ADDRESS}"
+    chainlink_keeper_registry: "0x02777053d6764996e594c3E88AF1D58D5363a2e6"
+
+  deployment:
+    compiler_version: "0.8.20"
+    optimization_runs: 200
+    audit_required: true
+    auditors: ["OpenZeppelin", "Trail of Bits"]
+    insurance_coverage_usd: 500_000
+
+emergency_contacts:
+  - role: "CEO"
+    contact: "ceo@htsdao.org"
+    telegram: "@hts_ceo"
+  - role: "CFO"
+    contact: "cfo@htsdao.org"
+    telegram: "@hts_cfo"
+  - role: "CTO"
+    contact: "cto@htsdao.org"
+    telegram: "@hts_cto"
+  - role: "FSRA_Compliance_Officer"
+    contact: "compliance@htsdao.org"
+    phone: "+971-2-XXX-XXXX"
+  - role: "Security_Incident_Response"
+    contact: "security@htsdao.org"
+    pagerduty: "${PAGERDUTY_WEBHOOK}"
+
+metadata:
+  version: "1.0"
+  created_date: "2025-11-18"
+  last_modified: "2025-11-18"
+  owner: "HTS DAO Treasury Committee"
+  classification: "internal"
+  next_review_date: "2026-01-18"
+  related_documents:
+    - "portfolio-rebalancing-framework.md"
+    - "rebalancing-smart-contracts.md"
+    - "blx-risk-framework-v2.md"
