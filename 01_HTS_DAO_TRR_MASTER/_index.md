@@ -10,6 +10,7 @@ HTS 프로젝트의 철학, 기술 아키텍처, 비즈니스 로직이 모두 �
 | `TRR_X_Protocol_Specs.md` | 탈중앙 무역결제 프로토콜 (TRR-X) 설계 | ✅ 완료 |
 | `TRR_Remit_Module.md` | 국제 송금용 TRR-Remit 시스템 구조 | 🔄 진행중 |
 | `HTS_Market_Platform_Design.md` | HTS Market 내 TRR 기반 거래 모델 | ✅ 완료 |
+| `P5_Mission_Verification_System_Patent_Spec.md` | DAO 기반 미션 검증 시스템 특허 명세서 | ✅ 완료 |
 
 ## 🔍 구조 개요
 - **TRR-X:** 무역 결제 및 청산 프로토콜  

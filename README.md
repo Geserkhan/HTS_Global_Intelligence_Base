@@ -12,7 +12,8 @@ AI 모델이 이 자료를 읽을 때, 다음 순서로 탐색하도록 설계�
 | 3 | `/LABUAN_DMH_BANK` | 라부안 디지털 머천트 은행 관련 기획 및 구조 |
 | 4 | `/BLXWT_Reward_System` | BLX World Trade 리워드 및 토큰 구조 설계 |
 | 5 | `/Archive/Business_Plans` | 과거 및 최신 비즈니스 플랜 아카이브 |
-| 6 | `/Meta_Bridge_AI_Integration` | AI 협업, 메타데이터, 자동 분석 도구 집합 |
+| 6 | `/Mission_Verification_System` | DAO 기반 미션 검증 시스템 (P5 명세서, 스마트 컨트랙트) |
+| 7 | `/Meta_Bridge_AI_Integration` | AI 협업, 메타데이터, 자동 분석 도구 집합 |
 
 ---
 
