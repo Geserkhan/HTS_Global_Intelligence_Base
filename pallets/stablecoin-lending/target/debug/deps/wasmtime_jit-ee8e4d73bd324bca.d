@@ -1,0 +1,17 @@
+/home/user/HTS_Global_Intelligence_Base/pallets/stablecoin-lending/target/debug/deps/wasmtime_jit-ee8e4d73bd324bca.d: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/lib.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/code_memory.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/debug.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/demangling.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/instantiate.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/unwind.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling/jitdump_disabled.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling/perfmap_linux.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling/vtune_disabled.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/unwind/systemv.rs
+
+/home/user/HTS_Global_Intelligence_Base/pallets/stablecoin-lending/target/debug/deps/libwasmtime_jit-ee8e4d73bd324bca.rmeta: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/lib.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/code_memory.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/debug.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/demangling.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/instantiate.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/unwind.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling/jitdump_disabled.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling/perfmap_linux.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling/vtune_disabled.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/unwind/systemv.rs
+
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/code_memory.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/debug.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/demangling.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/instantiate.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/unwind.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling/jitdump_disabled.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling/perfmap_linux.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/profiling/vtune_disabled.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmtime-jit-8.0.1/src/unwind/systemv.rs:
+
+# env-dep:CARGO_PKG_VERSION=8.0.1

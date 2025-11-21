@@ -1,0 +1,9 @@
+/home/user/HTS_Global_Intelligence_Base/pallets/stablecoin-lending/target/debug/deps/sp_runtime_interface-6d24e307703101d8.d: /root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/lib.rs /root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/host.rs /root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/impls.rs /root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/pass_by.rs /root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/util.rs
+
+/home/user/HTS_Global_Intelligence_Base/pallets/stablecoin-lending/target/debug/deps/libsp_runtime_interface-6d24e307703101d8.rmeta: /root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/lib.rs /root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/host.rs /root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/impls.rs /root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/pass_by.rs /root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/util.rs
+
+/root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/lib.rs:
+/root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/host.rs:
+/root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/impls.rs:
+/root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/pass_by.rs:
+/root/.cargo/git/checkouts/substrate-ef701c1d76c9f8aa/948fbd2/primitives/runtime-interface/src/util.rs:

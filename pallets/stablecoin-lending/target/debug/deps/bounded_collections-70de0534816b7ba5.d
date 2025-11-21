@@ -1,0 +1,10 @@
+/home/user/HTS_Global_Intelligence_Base/pallets/stablecoin-lending/target/debug/deps/bounded_collections-70de0534816b7ba5.d: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/lib.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/bounded_btree_map.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/bounded_btree_set.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/bounded_vec.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/weak_bounded_vec.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/test.rs
+
+/home/user/HTS_Global_Intelligence_Base/pallets/stablecoin-lending/target/debug/deps/libbounded_collections-70de0534816b7ba5.rmeta: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/lib.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/bounded_btree_map.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/bounded_btree_set.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/bounded_vec.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/weak_bounded_vec.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/test.rs
+
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/bounded_btree_map.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/bounded_btree_set.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/bounded_vec.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/weak_bounded_vec.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bounded-collections-0.1.9/src/test.rs:
