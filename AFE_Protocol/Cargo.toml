@@ -1,0 +1,61 @@
+[package]
+name = "afe-protocol-integration-tests"
+version = "0.1.0"
+edition = "2021"
+authors = ["HTS Global Intelligence Team"]
+description = "AFE Protocol E2E Integration Tests - Brain, Eyes, Shield, Heart"
+
+[dependencies]
+# Substrate 핵심 의존성
+frame-support = { version = "4.0.0-dev", default-features = false }
+frame-system = { version = "4.0.0-dev", default-features = false }
+sp-runtime = { version = "7.0.0", default-features = false }
+sp-core = { version = "7.0.0", default-features = false }
+sp-io = { version = "7.0.0", default-features = false }
+sp-std = { version = "5.0.0", default-features = false }
+
+# AFE Protocol 4대 Pallet
+pallet-risk-valuation = { path = "../pallets/risk-valuation", default-features = false }
+pallet-oracle-governance = { path = "../pallets/oracle-governance", default-features = false }
+pallet-zk-verification = { path = "../pallets/zk-verification", default-features = false }
+pallet-stablecoin-lending = { path = "../pallets/stablecoin-lending", default-features = false }
+
+# 추가 의존성
+pallet-balances = { version = "4.0.0-dev", default-features = false }
+pallet-timestamp = { version = "4.0.0-dev", default-features = false }
+
+# 테스트 의존성
+[dev-dependencies]
+pretty_assertions = "1.3"
+hex-literal = "0.4"
+
+[features]
+default = ["std"]
+std = [
+    "frame-support/std",
+    "frame-system/std",
+    "sp-runtime/std",
+    "sp-core/std",
+    "sp-io/std",
+    "sp-std/std",
+    "pallet-risk-valuation/std",
+    "pallet-oracle-governance/std",
+    "pallet-zk-verification/std",
+    "pallet-stablecoin-lending/std",
+    "pallet-balances/std",
+    "pallet-timestamp/std",
+]
+
+runtime-benchmarks = [
+    "frame-support/runtime-benchmarks",
+    "frame-system/runtime-benchmarks",
+]
+
+try-runtime = [
+    "frame-support/try-runtime",
+    "frame-system/try-runtime",
+]
+
+[[test]]
+name = "integration"
+path = "tests/integration/mod.rs"
